@@ -1,0 +1,10 @@
+{
+   "xml": {
+      "address" : {
+         "city" : "Hometown",
+         "country" : "Mordor"
+      },
+      "currency" : "gold",
+      "name" : "Young Fella",
+   }
+}
