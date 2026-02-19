@@ -1,7 +1,7 @@
 __title__ = "XmlDict"
 __description__ = "XML JSON conversion"
 __url__ = ""
-__version__ = "1.1.1"
+__version__ = "1.1.3"
 __author__ = "Daniel Rexin"
 __author_email__ = "daniel@medinion.de"
 __license__ = "MIT"
