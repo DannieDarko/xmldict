@@ -3,3 +3,4 @@
 *.ipynb
 *.egg-info
 dist
+__pycache__

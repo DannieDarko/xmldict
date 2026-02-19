@@ -1,2 +1,3 @@
 # XmlDict
-This is a low level class to transform JSON to XML and vice versa
+This is a lightweight implementation to transform JSON to XML and vice versa.
+Uses only python core functions, so no external requirements.
