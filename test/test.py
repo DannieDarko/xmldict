@@ -1,5 +1,5 @@
 import json
-from xmldict import XmlDict
+from xmldict_light import XmlDict
 
 with open('xml.json', 'r') as f:
     xml_json=XmlDict.from_dict(json.load(f))
