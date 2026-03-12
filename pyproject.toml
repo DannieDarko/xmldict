@@ -1,13 +1,13 @@
 [build-system]
-requires = ["uv_build"]
-build-backend = "uv_build"
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
 
 [project]
 name = "XmlDict-light"
-version="1.1.4"
-description="XML JSON conversion"
+dynamic = ["version"]
+description = "XML JSON conversion"
 authors = [
-  { name="Daniel Rexin" },
+  { name = "Daniel Rexin" },
 ]
 readme = "README.md"
 requires-python = ">=3.11"
@@ -16,7 +16,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "License :: OSI Approved :: MIT License",
 ]
-keywords = ["json", "xml", "converter", "conversion"]
+keywords = ["json", "xml", "dict", "converter", "conversion"]
 license = "MIT"
 license-files = ["LICEN[CS]E*"]
 dependencies = [
@@ -24,6 +24,9 @@ dependencies = [
 test = [
   "pytest"
 ]
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
 
 [project.urls]
 Homepage = "https://github.com/DannieDarko/xmldict"
