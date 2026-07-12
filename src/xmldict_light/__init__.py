@@ -1,5 +1,3 @@
-import importlib.metadata
-
 from .__version__ import (
     __author__,
     __author_email__,
@@ -15,8 +13,3 @@ from .xmldict import XmlDict
 __all__=[
     XmlDict
 ]
-
-try:
-    __version__ = importlib.metadata.version(__name__)
-except importlib.metadata.PackageNotFoundError:
-    pass

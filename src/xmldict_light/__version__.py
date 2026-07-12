@@ -1,7 +1,9 @@
+from importlib.metadata import version
+
 __title__ = "XmlDict"
 __description__ = "XML JSON conversion"
 __url__ = ""
-__version__ = "1.1.5"
+__version__ = version(__package__)
 __author__ = "Daniel Rexin"
 __author_email__ = "daniel@medinion.de"
 __license__ = "MIT"

@@ -1,11 +1,11 @@
 [build-system]
-requires = ["hatchling", "uv-dynamic-versioning"]
-build-backend = "hatchling.build"
+requires = ["uv_build>=0.11.28,<0.12", "uv-dynamic-versioning"]
+build-backend = "uv_build"
 
 [project]
 name = "XmlDict-light"
-dynamic = ["version"]
-description = "XML JSON conversion"
+version = "1.1.6"
+description = "XML JSON conversion tool"
 authors = [
   { name = "Daniel Rexin" },
 ]
@@ -17,17 +17,14 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 ]
 keywords = ["json", "xml", "dict", "converter", "conversion"]
-license = "MIT"
-license-files = ["LICEN[CS]E*"]
+license = { file = "LICENSE" }
 dependencies = [
 ]
 test = [
   "pytest"
 ]
 
-[tool.hatch.version]
-source = "uv-dynamic-versioning"
-
 [project.urls]
-Homepage = "https://github.com/DannieDarko/xmldict"
-Issues = "https://github.com/DannieDarko/xmldict/issues"
+homepage = "https://github.com/DannieDarko/xmldict"
+issues = "https://github.com/DannieDarko/xmldict/issues"
+repository = "https://github.com/DannieDarko/xmldict"
